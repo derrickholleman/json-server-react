@@ -21,7 +21,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>JSON-Server and Express Integration</h1>
+      <h1>JSON-Server and React Integration</h1>
       <button onClick={loadUsers}>Load Users</button>
 
       <form onSubmit={handleSubmit}>
