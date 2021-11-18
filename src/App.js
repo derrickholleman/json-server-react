@@ -14,9 +14,12 @@ function App() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post("http://localhost:5000/users", {
-      name: name
-    }).then(loadUsers)
+    axios
+      .post("http://localhost:5000/users", {
+        name: name,
+      })
+      .then(loadUsers);
+    setName("");
   };
 
   return (
@@ -26,7 +29,13 @@ function App() {
 
       <form onSubmit={handleSubmit}>
         <label htmlFor="newUser">Name: </label>
-        <input type="text" id="newUser" value={name} onChange={(e) => setName(e.target.value)}/>
+        <input
+          type="text"
+          id="newUser"
+          value={name}
+          required
+          onChange={(e) => setName(e.target.value)}
+        />
         <button type="submit">Create User</button>
       </form>
 
