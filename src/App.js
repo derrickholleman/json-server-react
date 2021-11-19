@@ -15,7 +15,7 @@ function App() {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:8080/users", {
+      .post("http://localhost:5000/users", {
         name: name,
       })
       .then(loadUsers);
