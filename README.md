@@ -4,9 +4,9 @@ In the project root directory, you can run:
 
 ```docker build . -t derrickholleman/json-server-react```
 
-then execute the script:
+then execute the command:
 
-### `npm run docker:run`
+```docker run --rm -p 3000:3000 -p 5000:5000 derrickholleman/json-server-react```
 
 afterwards visit http://localhost:3000/ to view the project
 
