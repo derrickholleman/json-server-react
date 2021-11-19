@@ -12,7 +12,7 @@ afterwards visit http://localhost:3000/ to view the project
 
 ## Start the project without Docker
 
-In the project directory, you can run:
+In the root project directory, you can run:
 
 ### `npm install`
 
