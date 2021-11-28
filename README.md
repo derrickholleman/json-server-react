@@ -1,3 +1,5 @@
+simple app for playing with json server in react.  has GET and POST requests.  new user is rendered immediately after being submitted.
+
 ## Start the project using Docker
 
 In the project root directory, you can run:
